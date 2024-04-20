@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-sca3e=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Docytee || Baba I</title>
+  </head>
+  <body data-bs-theme="">
+    <div id="playContents">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closePlayContents(), clearAllInputs()"
+        >&times;</a
+      >
+
+      <div id="playInputs">
+        <input
+          type="text"
+          name="firstNumber"
+          id="firstNumber"
+          class="numbers"
+          placeholder=""
+          maxlength="2"
+        />
+        <input
+          type="text"
+          name="secondNumber"
+          id="secondNumber"
+          class="numbers"
+          placeholder=""
+          maxlength="2"
+        />
+        <input
+          type="text"
+          name="thirdNumber"
+          id="thirdNumber"
+          class="numbers"
+          placeholder=""
+          maxlength="2"
+        />
+        <br />
+        <button
+        id="clearAllInputs"
+          class="btn btn-warning my-3"
+          type="button"
+          onclick="clearAllInputs()"
+        >
+          Clear
+        </button>
+        <button id="play" class="btn btn-success my-3" type="button" onclick="playGame()">
+          PLAY
+        </button>
+        <br />
+        <p id="errorMessage" class="text-danger"></p> <br>
+        <p id="outcome" class="text-light"></p>
+      </div> 
+    </div>
+
+    <div class="container-fluid" style="height: 100vh; padding-top: 13%">
+      <div class="container-fluid row" style="width: 90vb; text-align: center">
+        <a
+          href="#"
+          class="h2 text-decoration-none col text-bg-success rounded-5 mx-2"
+          style="padding: 130px 0"
+          >HOME</a
+        >
+        <a
+          href="#"
+          class="h2 text-decoration-none col text-bg-success rounded-5 mx-2"
+          style="padding: 130px 0"
+          onclick="document.getElementById('thirdNumber').style.display = 'none'; openPlayContents()"
+          >2 Sure</a
+        >
+
+        <a
+          href="#"
+          class="h2 text-decoration-none col text-bg-success rounded-5 mx-2"
+          style="padding: 130px 0"
+          onclick="document.getElementById('thirdNumber').style.display = 'inline'; openPlayContents()"
+          >3 Direct</a
+        >
+
+        <a
+          href="#"
+          class="h2 text-decoration-none col text-bg-success rounded-5 mx-2"
+          style="padding: 130px 0"
+          >Blog Archive</a
+        >
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
